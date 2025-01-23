@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Jomhuria';
+  src: url('/src/assets/fonts/Jomhuria-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Jeju Hallasan';
+  src: url('/src/assets/fonts/JejuHallasan-Regular.ttf') format('truetype');
+}
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.bg-black-opacity {
+  @apply bg-black/80;
+}
+

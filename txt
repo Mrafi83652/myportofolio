@@ -1,0 +1,41 @@
+bg-gradient-to-b from-backgroundG to-backgroundH 
+
+
+  <Swiper 
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    className="rounded-lg shadow-lg"
+                    >
+                        <SwiperSlide>
+                        <Projectslide
+                        img:{}
+                        />
+
+                       
+                        </SwiperSlide>
+
+                    </Swiper>
+
+
+                    <SwiperSlide>
+                        <Projectslide
+                        img={Pro5}
+                        title="Desain Figma Pretest"
+                        deskripsi="Desain Figma Pretest untuk website koleksi gambar ini bertujuan untuk merancang antarmuka yang sederhana namun fungsional. Fokus utama adalah pada pengorganisasian gambar, sistem pencarian, dan tampilan galeri yang memudahkan pengguna untuk menjelajahi koleksi gambar."
+                        slideIndex={2}
+                        />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <Projectslide
+                        img={Pro1}
+                        title="Grocify (Test)"
+                        deskripsi="Website Grocify test ini dirancang untuk menguji fungsionalitas dan antarmuka pengguna dari aplikasi belanja bahan makanan online. Fokus utamanya adalah pada kemudahan penggunaan, pengalaman berbelanja yang efisien, dan akses ke berbagai fitur aplikasi."
+                        slideIndex={3}
+                        />
+
+
+
+                       
+                        </SwiperSlide>

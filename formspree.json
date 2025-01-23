@@ -1,0 +1,20 @@
+{
+    "forms": {
+      "signupForm": {
+        "name": "Sign-up Form",
+        "actions": [
+          {
+            "type": "email",
+            "to": "muhammadraffinurrahman@gmail.com"
+          }
+        ],
+        "fields": {
+          "email": {
+            "required": true,
+            "type": "email"
+          }
+        }
+      }
+    }
+  }
+  
