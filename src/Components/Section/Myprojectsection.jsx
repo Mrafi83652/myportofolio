@@ -35,20 +35,24 @@ const Myprojectsection = () => {
                       loop={true}
                     >
                         <SwiperSlide>
+                        <a href={Pro3}>
                         <Projectslide
                         img={Pro3}
                         title="Landing page Web IKN"
                         deskripsi="Landing page ini memperkenalkan konsep, visi, dan potensi Ibu Kota Nusantara (IKN) secara informatif. Dibangun dengan React.js dan Tailwind CSS, desainnya modern, responsif, dan fokus pada pengalaman pengguna."
                         slideIndex={0}
                         />
+                        </a>
                         </SwiperSlide>
                         <SwiperSlide>
+                        <a href={Pro4}>
                         <Projectslide
                         img={Pro4}
                         title="Website Perpustakaan With Team"
                         deskripsi="Website perpustakaan ini dibangun dengan HTML, CSS, dan PHP native tanpa fitur responsif, hanya optimal untuk desktop. Meskipun sederhana, website ini menyediakan fungsionalitas dasar untuk mengelola koleksi buku dan data pengguna."
                         slideIndex={1}
                         />
+                        </a>
                         </SwiperSlide>
                      
                     </Swiper>
