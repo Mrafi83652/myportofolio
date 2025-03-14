@@ -9,11 +9,10 @@ import Ex3 from '../../assets/expe/ex3.jpg'
 import Ex4 from '../../assets/expe/ex4.jpg'
 import Ex5 from '../../assets/expe/ex5.jpg'
 import Ex6 from '../../assets/expe/ex6.jpg'
-import Ex7 from '../../assets/expe/ex7.jpg'
-import Ex8 from '../../assets/expe/ex8.jpg'
-import Ex9 from '../../assets/expe/ex9.jpg'
-import Ex10 from '../../assets/expe/ex10.jpg'
-import Ex11 from '../../assets/expe/ex11.jpg'
+import Ex7 from '../../assets/expe/ex7.jpg' 
+import DESIGN1 from '../../assets/expe/DESIGN1.png'
+import DESIGN2 from '../../assets/expe/DESIGN2.png'
+import DESIGN3 from '../../assets/expe/DESIGN3.png'
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css'; // Import AOS styles
@@ -78,7 +77,7 @@ const Experience = () => {
                     {/* Teks Tetap */}
                     <div className='px-2 sm:px-10 pb-7 text-shadow'>
                     <h1 className="text-white text-3xl">PKL/MAGANG DI PT.SAWALA TECH</h1>
-                        <p className="text-softGreen text-justify text-2xl">Saya memiliki pengalaman magang selama 4 bulan di PT Sawala Tech, dan saat ini sudah berjalan 1 bulan setengah. Baru-baru ini, saya berhasil menyelesaikan pembuatan landing page untuk IKN.</p>
+                        <p className="text-softGreen text-justify text-2xl">Saya memiliki pengalaman magang selama 4 bulan di PT Sawala Tech, Selama 4 bulan magang di PT Sawala Tech, saya mengerjakan landing page IKN, portofolio web interaktif, dan LMS untuk anak-anak, sekaligus memperdalam keterampilan frontend dengan Next.js.</p>
                         </div>
                      
                     </div>
@@ -91,7 +90,7 @@ const Experience = () => {
                             <i className="ri-arrow-left-wide-line text-black font-bold text-sm"></i> BACK
                         </div>
                         <div onClick={() => swiperRef2.current.swiper.slideNext()}
-                            className='transition-all duration-300 active:bg-softGreen text-black bg-softGreen hover:bg-greenHover rounded-lg text-2xl h-10 w-20 pt-1 md:pt-2 text-center cursor-pointer'>
+                            className='transition-all duration-300 active:bg-softGreentext-black bg-softGreen hover:bg-greenHover rounded-lg text-2xl h-10 w-20 pt-1 md:pt-2 text-center cursor-pointer'>
                             NEXT <i className="ri-arrow-right-wide-line font-bold text-black text-sm"></i>
                         </div>
                         </div>
@@ -162,35 +161,29 @@ const Experience = () => {
                       loop={true}
                     >
                         <SwiperSlide>
-                        <Experienceslide
-                        img={Ex8}
+                        <Experienceslide className="w-[500px]"
+                        img={DESIGN1}
                         slideIndex={0}
                         />
                         </SwiperSlide>
                         <SwiperSlide>
                         <Experienceslide
-                        img={Ex9}
+                        img={DESIGN2}
                         slideIndex={1}
                         />
                         </SwiperSlide>
                         <SwiperSlide>
                         <Experienceslide
-                        img={Ex10}
-                        slideIndex={2}
-                        />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                        <Experienceslide
-                        img={Ex11}
+                        img={DESIGN3}
                         slideIndex={2}
                         />
                         </SwiperSlide>
                         </Swiper>
                          {/* Teks Tetap */}
                       <div className='sm:px-10 pb-7 text-shadow'>
-                        <h1 className="text-white text-3xl">DESAIN PORTOFOLIO, FIGMA</h1>
+                        <h1 className="text-white text-3xl">DESAIN GABUT, FIGMA</h1>
                         <p className="text-softGreen text-justify text-2xl">
-                        Desain portofolio ini dibuat dengan Figma, mengutamakan kesederhanaan dan fungsionalitas.
+                        Gambar-gambar yang kalian lihat ini dibuat dengan Figma.
                                 </p>
                         </div>
                         

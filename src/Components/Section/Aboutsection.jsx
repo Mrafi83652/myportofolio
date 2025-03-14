@@ -34,16 +34,20 @@ const Aboutsection = () => {
                                     <stop offset="100%" style={{ stopColor: "#FFD700", stopOpacity: 1 }} />
                                 </linearGradient>
                             </defs>
-                        <path fill="url(#gradientColors2)"  d="M38.5,-64.7C49.6,-59.6,57.5,-49.6,63,-38.7C68.5,-27.8,71.6,-15.9,73.1,-3.6C74.6,8.7,74.5,21.4,69.2,31.5C63.9,41.6,53.4,49.1,42.5,55.8C31.5,62.6,20.2,68.5,7.4,69.9C-5.5,71.2,-11.1,67.9,-21.5,65.3C-31.9,62.6,-47.1,60.7,-56.4,53.5C-65.7,46.4,-69,34,-70.4,22.8C-71.9,11.5,-71.5,1.4,-71.1,-10.2C-70.6,-21.7,-70.1,-34.5,-63.2,-41.7C-56.3,-48.8,-43.1,-50.4,-31.9,-54.9C-20.7,-59.5,-10.3,-66.9,2,-69.8C14.4,-72.7,28.8,-71.4,38.5,-64.7Z" transform="translate(100 100)" />
+                        <path fill="url(#gradientColors2)"  d="M24,-33.5C36.5,-34.4,55.8,-38.9,67,-33.9C78.2,-28.9,81.2,-14.4,71.4,-5.7C61.6,3.1,39,6.3,28.5,12.5C18.1,18.8,19.9,28.1,17.1,37.4C14.4,46.7,7.2,55.8,-1.8,59C-10.9,62.2,-21.7,59.3,-31.3,54C-40.8,48.6,-48.9,40.8,-46.6,31.4C-44.3,22,-31.5,11,-35.6,-2.4C-39.7,-15.7,-60.8,-31.5,-65.4,-44.9C-70,-58.3,-58.3,-69.4,-44.6,-67.9C-31,-66.5,-15.5,-52.4,-4.9,-44C5.7,-35.6,11.5,-32.7,24,-33.5Z" transform="translate(100 100)" />
                         </svg>
                         </span>
                         </div>
                     
                     <div className="box order-1 md:order-2" data-aos="slide-left" data-aos-duration="1250" data-aos-once="false">
+                        <div className='flex flex-col space-y-4 mb-4'>
                         <h1 className="font-jeju sm:text-5xl text-white text-3xl">Hey There Im <span className="text-darkRed">Rafi</span></h1>
-                        <p className='sm:text-3xl text-2xl text-justify text-softGreen mb-3'>Halo! Saya <span className='text-softMint'>Mochammad Rafi Nurrahman</span>, saat ini berusia 17 tahun, dan sedang menempuh pendidikan di SMK <span className='text-softMint'>Informatika Sumedang</span> jurusan Rekayasa Perangkat Lunak <span className='text-softMint'>(RPL)</span>. Saya tinggal di <span className='text-softMint'>Gg Haji Kosim NO.17 RT03 RW10</span>, dan memiliki ketertarikan besar di bidang teknologi, khususnya pengembangan website dan pemrograman.</p>
-                        <button onClick={handleDownload} className='bg-darkRed hover:bg-redHover px-6 transition-all duration-300 text-2xl pb-2 pt-3 text-white tracking-widest rounded-lg'>
-                            DOWNLOAD CV <i className="ri-file-download-line ms-1 mt-72 text-white"></i>
+                        <p className='sm:text-3xl text-2xl text-justify text-softGreen mb-3'>
+                        Halo! Saya <span className='text-softMint'>Mochammad Rafi Nurrahman</span>, saat ini berusia 17 tahun, dan sedang menempuh pendidikan di SMK <span className='text-softMint'>Informatika Sumedang</span> jurusan Rekayasa Perangkat Lunak <span className='text-softMint'>(RPL)</span>. Saya tinggal di <span className='text-softMint'>Gg Haji Kosim NO.17 RT03 RW10</span>, dan memiliki ketertarikan besar di bidang teknologi, khususnya pengembangan website dan pemrograman. Untuk berkomunikasi lebih lanjut, anda dapat menghubungi saya melalui email <span className='text-softMint'>muhammadraffinurrahman@gmail.com</span> atau nomor telepon <span className='text-softMint'>+62-857-2371-3968</span>.
+                        </p>
+                        </div>
+                        <button onClick={handleDownload} className='bg-darkRed hover:bg-redHover px-6 hover:scale-105 transform transition-all duration-300 text-2xl pb-2 pt-3 text-white tracking-widest rounded-lg'>
+                            DOWNLOAD CV <i className="ri-file-download-line ms-1 text-white"></i>
                         </button>
                     </div>
                     

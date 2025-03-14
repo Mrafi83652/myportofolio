@@ -92,19 +92,19 @@ const Navbar = () => {
           >
             <li className={`flex items-center gap-3 ${activeSection === "home" ? "text-darkRed" : ""}`}>
               <i className="ri-home-2-line text-3xl md:hidden block"></i>
-              <a href="#home" className="pt-2">HOME</a>
+              <a href="#home" className="pt-2 relative block after:block after:bottom-[5px] after:absolute after:h-[3px] after:rounded-full after:bg-darkRed after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">HOME</a>
             </li>
             <li className={`flex items-center gap-3 ${activeSection === "about" ? "text-darkRed" : ""}`}>
               <i className="ri-information-2-line text-3xl md:hidden block"></i>
-              <a href="#about" className="pt-2">ABOUT</a>
+              <a href="#about" className="pt-2 relative block after:block after:bottom-[5px] after:absolute after:h-[3px] after:rounded-full after:bg-darkRed after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">ABOUT</a>
             </li>
             <li className={`flex items-center gap-3 ${activeSection === "project" ? "text-darkRed" : ""}`}>
               <i className="ri-information-2-line text-3xl md:hidden block"></i>
-              <a href="#project" className="pt-2">PROJECT</a>
+              <a href="#project" className="pt-2 relative block after:block after:bottom-[5px] after:absolute after:h-[3px] after:rounded-full after:bg-darkRed after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">PROJECT</a>
             </li>
             <li className={`flex items-center gap-3 ${activeSection === "contact" ? "text-darkRed" : ""}`}>
               <i className="ri-message-line text-3xl md:hidden block"></i>
-              <a href="#contact" className="pt-2">CONTACT</a>
+              <a href="#contact" className="pt-2 relative block after:block after:bottom-[5px] after:absolute after:h-[3px] after:rounded-full after:bg-darkRed after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">CONTACT</a>
             </li>
             <div className="button downloadcv md:hidden">
             <button onClick={handleDownload} className='bg-darkRed hover:bg-redHover px-6 transition-all text-2xl pb-2 pt-3 text-white tracking-widest rounded-lg'>

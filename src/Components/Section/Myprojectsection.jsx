@@ -6,10 +6,11 @@ import 'aos/dist/aos.css'; // Import AOS styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Me2 from '../../assets/me2.png'
+import Im from '../../assets/im.png'
 // import Pro5 from '../../assets/projek/5.png'
 import Pro4 from '../../assets/projek/1a.jpg'
 import Pro3 from '../../assets/projek/2a.jpg'
+import Pro5 from '../../assets/projek/a5.jpg'
 // import Pro1 from '../../assets/projek/1.png'
 import Projectslide from '../Slide/Projectslide';
 const Myprojectsection = () => {
@@ -22,7 +23,7 @@ const Myprojectsection = () => {
         <div className='container mx-auto px-10 pt-12 pb-12'>
             <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
                 <div className='box' data-aos="zoom-out" data-aos-duration="1250" data-aos-once="false">
-                    <h1 className='text-white text-5xl text-center text-shadow tracking-wide'>MYPROJECT</h1>
+                    <h1 className='text-white text-5xl text-center text-shadow tracking-wide'>PROJECT</h1>
                     <Swiper 
                     spaceBetween={50}
                     slidesPerView={1}
@@ -55,6 +56,17 @@ const Myprojectsection = () => {
                         </a>
                         </SwiperSlide>
                      
+                        <SwiperSlide>
+                        <a href={Pro5}>
+                        <Projectslide
+                        img={Pro5}
+                        title="Manabu-F (LMS)"
+                        deskripsi="Manabu-F adalah proyek aplikasi web untuk pengalaman belajar yang interaktif dan terstruktur. Menggunakan Next.js untuk frontend, Tailwind CSS untuk styling, dan Firebase sebagai backend, Manabu-F menghadirkan tampilan modern serta sistem yang efisien."
+                        slideIndex={1}
+                        />
+                        </a>
+                        </SwiperSlide>
+                     
                     </Swiper>
                     {/* TOMBOL COSTUM */}
                  {/* TOMBOL CUSTOM */}
@@ -71,9 +83,9 @@ const Myprojectsection = () => {
 
                 </div>
                 <div className='box hidden lg:block'>
-                       <img src={Me2} alt="" className="mx-auto ml relative z-10" />
+                       <img src={Im} alt="" className="mx-auto ml relative z-10" />
                             {/* SVG Background */}
-                        <span className="absolute top-[2200px] sm:top-[2250px] right-[20px] sm:right-[80px] md:top-[1250px] md:right-[80px] lg:top-[1350px] lg:right-[80px] xl:top-[1500px] xl:right-[150px] z-0">
+                        <span className="absolute top-[2200px] sm:top-[2250px] right-[20px] sm:right-[80px] md:top-[1250px] md:right-[80px] lg:top-[1350px] lg:right-[160px] xl:top-[1550px] xl:right-[150px] z-0">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="animate-spin-slow sm:w-[450px] sm:h-[450px] md:h-[400px] md:w-[400px] w-[350px] h-[350px]">
                             <defs>
                                 <linearGradient id="gradientColors" x1="0%" y1="0%" x2="100%" y2="100%">

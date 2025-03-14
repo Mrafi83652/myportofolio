@@ -1,7 +1,8 @@
-import Im from '../../assets/im.png';
+import Im from '../../assets/me2.png';
 import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css'; // Import AOS styles
+import { Typewriter } from 'react-simple-typewriter'
 const Homesection = () => {
         // Fungsi buat download CV
         const handleDownload = async () => {
@@ -22,16 +23,26 @@ const Homesection = () => {
         <div className="container mx-auto px-10">
             <div className="hero grid grid-cols-1 md:grid-cols-3 md:pt-28 lg:pt-20 sm:pt-20 pt-24 gap-20 items-center">
                 <div className="box col-span-2" data-aos="zoom-out" data-aos-duration="1250" data-aos-once="false">
-                    <h3 className="font-jomhuria text-4xl text-darkRed">WELCOME!!🙌</h3>
-                    <h1 className="font-jeju sm:text-5xl text-white text-3xl">I Am <span className="text-darkRed">Web Developer</span></h1>
+                    <h3 className="font-jomhuria text-4xl text-darkRed">
+                    <Typewriter
+                        words={['WELCOME!!🙌', 'SELAMAT DATANG!!✨', 'こんにちは、みんなさん！👋']}
+                        loop={0} // 0 = infinite loop
+                        cursor
+                        cursorStyle="_"
+                        typeSpeed={100}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                        />
+                                </h3>
+                    <h1 className="font-jeju sm:text-5xl text-white text-3xl">I Am <span className="text-darkRed">Web developer</span></h1>
                     <p className='sm:text-3xl text-2xl text-justify text-softGreen'>Saya seorang <span className='text-softMint'>Web Developer </span>pemula dengan minat besar dalam membangun website yang modern, responsif, dan user-friendly. Saya adalah lulusan dari [SMK RPL IT].</p>
-                    <div className='social media flex gap-3 mb-5'>
-                        <a href="https://www.facebook.com/RAFFZZ.REAL" target='_blank' className='bg-darkRed hover:bg-redHover rounded-full py-2 px-3 transition-all duration-300'><i className="ri-facebook-fill text-white"></i></a>
-                        <a href="https://www.instagram.com/mrfnrm?igsh=N2JueDhwdGR6Zzlw" target='_blank' className='bg-darkRed hover:bg-redHover rounded-full py-2 px-3 transition-all duration-300'><i className="ri-instagram-fill text-white"></i></a>
-                        <a href="https://wa.me/6285723713968" target='_blank' className='bg-darkRed hover:bg-redHover rounded-full py-2 px-3 transition-all duration-300'><i className="ri-whatsapp-fill text-white"></i></a>
-                        <a href="https://www.linkedin.com/in/mochammad-rafi-nurrahman-934bb632b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' className='bg-darkRed hover:bg-redHover rounded-full py-2 px-3 transition-all duration-300'><i className="ri-linkedin-fill text-white"></i></a>
+                    <div className='social media flex gap-5 mt-2 mb-5'>
+                        <a href="https://www.facebook.com/RAFFZZ.REAL" target='_blank'><i className="ri-facebook-fill hover:text-darkRed active:text-darkRed text-xl text-white transition-all hover:scale-105 transform duration-300"></i></a>
+                        <a href="https://www.instagram.com/mrfnrm?igsh=N2JueDhwdGR6Zzlw" target='_blank'><i className="ri-instagram-fill hover:text-darkRed active:text-darkRed text-xl text-white transition-all hover:scale-105 transform duration-300"></i></a>
+                        <a href="https://wa.me/6285723713968" target='_blank'><i className="ri-whatsapp-fill hover:text-darkRed active:text-darkRed text-xl text-white transition-all hover:scale-105 transform duration-300"></i></a>
+                        <a href="https://www.linkedin.com/in/mochammad-rafi-nurrahman-934bb632b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank'><i className="ri-linkedin-fill hover:text-darkRed active:text-darkRed text-xl text-white transition-all hover:scale-105 transform duration-300"></i></a>
                     </div> 
-                    <button onClick={handleDownload} className='duration-300 bg-darkRed hover:bg-redHover px-6 transition-all text-2xl pb-2 pt-3 text-white tracking-widest rounded-lg'>
+                    <button onClick={handleDownload} className='transform duration-300 hover:scale-105 bg-darkRed hover:bg-redHover px-6 transition-all text-2xl pb-2 pt-3 text-white tracking-widest rounded-lg'>
                         DOWNLOAD CV <i className="ri-file-download-line ms-1 mt-72 text-white"></i>
                     </button>
                 </div>
